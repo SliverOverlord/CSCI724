@@ -1,3 +1,9 @@
+This is a basic guide to using git
+
+below are the commands used to setup a local repository and push it to gitHub
+
+open a terminal and cd to the folder where you want your project
+
 Mac:~ turtle$ cd /Volumes
 Mac:Volumes turtle$ cd FLASHDRIVE
 Mac:FLASHDRIVE turtle$ cd classes
@@ -14,6 +20,8 @@ FireAndFloodDetection.docx	groundTruth.docx
 PlantID.docx			projectGrades.pdf
 Project.pdf			weather_hazards
 Mac:project turtle$ cd weather_hazards
+
+git init sets up a repository i the current folder
 Mac:weather_hazards turtle$ git init
 Initialized empty Git repository in /Volumes/FLASHDRIVE/classes/AI/project/weather_hazards/.git/
 Mac:weather_hazards turtle$ git pull https://github.com/SliverOverlord/CSCI724.git
@@ -27,8 +35,17 @@ From https://github.com/SliverOverlord/CSCI724
 Mac:weather_hazards turtle$ ls
 CSCI 724 Group Project Notes.docx	Regions.py
 README.md				test.txt
+
+Now add the link to the master you may need me to add you as a collaborator
+
 Mac:weather_hazards turtle$ git remote add master https://github.com/SliverOverlord/CSCI724.git
+
+The next command adds your new work 
+
 Mac:weather_hazards turtle$ git add *
+
+This next command will open vim where you will press i then enter a comment press esc and :wq then enter
+
 Mac:weather_hazards turtle$ git commit
 [master c7394af] created the region class
  1 file changed, 24 insertions(+)
