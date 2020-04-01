@@ -1,0 +1,54 @@
+Mac:~ turtle$ cd /Volumes
+Mac:Volumes turtle$ cd FLASHDRIVE
+Mac:FLASHDRIVE turtle$ cd classes
+Mac:classes turtle$ ls
+AI		CSCI615		Old Classes	Testing
+CSCI371		CSCI790		RaspberryPi	notes
+Mac:classes turtle$ cd AI
+Mac:AI turtle$ ls
+AI_Book.pdf	assignment01	assignment03	project
+PowerPoints	assignment02	presentation
+Mac:AI turtle$ cd project
+Mac:project turtle$ ls
+FireAndFloodDetection.docx	groundTruth.docx
+PlantID.docx			projectGrades.pdf
+Project.pdf			weather_hazards
+Mac:project turtle$ cd weather_hazards
+Mac:weather_hazards turtle$ git init
+Initialized empty Git repository in /Volumes/FLASHDRIVE/classes/AI/project/weather_hazards/.git/
+Mac:weather_hazards turtle$ git pull https://github.com/SliverOverlord/CSCI724.git
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 9 (delta 1), reused 6 (delta 1), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+From https://github.com/SliverOverlord/CSCI724
+ * branch            HEAD       -> FETCH_HEAD
+Mac:weather_hazards turtle$ ls
+CSCI 724 Group Project Notes.docx	Regions.py
+README.md				test.txt
+Mac:weather_hazards turtle$ git remote add master https://github.com/SliverOverlord/CSCI724.git
+Mac:weather_hazards turtle$ git add *
+Mac:weather_hazards turtle$ git commit
+[master c7394af] created the region class
+ 1 file changed, 24 insertions(+)
+ create mode 100644 Regions.py
+Mac:weather_hazards turtle$ git push --set-upstream master master
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 655 bytes | 655.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/SliverOverlord/CSCI724.git
+   38dc5b0..c7394af  master -> master
+Branch 'master' set up to track remote branch 'master' from 'master'.
+Mac:weather_hazards turtle$ 
+
+Use git pull before working on project.
+After changes have been made: git add *
+git commit
+i
+Enter comment then press esc next :wq
+This will bring you back to terminal.
+Enter: git push
+The online repository will be uptodate.
