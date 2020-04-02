@@ -3,6 +3,7 @@ This is a basic guide to using git
 below are the commands used to setup a local repository and push it to gitHub
 
 open a terminal and cd to the folder where you want your project
+The ls command will show you what is in the current folder and cd moves you from one to another. Windows uses diffrent command sets.
 
 Mac:~ turtle$ cd /Volumes
 Mac:Volumes turtle$ cd FLASHDRIVE
@@ -21,7 +22,8 @@ PlantID.docx			projectGrades.pdf
 Project.pdf			weather_hazards
 Mac:project turtle$ cd weather_hazards
 
-git init sets up a repository i the current folder
+git init sets up a repository in the current folder
+
 Mac:weather_hazards turtle$ git init
 Initialized empty Git repository in /Volumes/FLASHDRIVE/classes/AI/project/weather_hazards/.git/
 Mac:weather_hazards turtle$ git pull https://github.com/SliverOverlord/CSCI724.git
@@ -62,10 +64,11 @@ Branch 'master' set up to track remote branch 'master' from 'master'.
 Mac:weather_hazards turtle$ 
 
 Use git pull before working on project.
+Add a new file to the folder.
 After changes have been made: git add *
 git commit
 i
 Enter comment then press esc next :wq
 This will bring you back to terminal.
 Enter: git push
-The online repository will be uptodate.
+The online repository will be up dated.
