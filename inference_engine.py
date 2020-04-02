@@ -57,6 +57,23 @@ def check_image(image):
 
     return hazards
 
+"""
+Function name: make_log_file
+Description: This function makes a txt file to save log data.
+Input: string
+Output: none
+Preconditions: none
+Postconditions: Creates a log file called log_file.txt containing the generated alerts.
+"""
+def make_log_file(log_string):
+
+    #Open a file
+    output_file = open("log_file.txt", "w")
+    #Write a heading and add the log to the file.
+    output_file.write("Log File:\n")
+    output_file.write(log_string+"\n")
+    output_file.close()
+
 def main():
 
     #List to store regions

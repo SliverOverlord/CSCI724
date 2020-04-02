@@ -42,11 +42,34 @@ class Region:
 ##    bool snow_cover;
 ##    bool flooding;
 
+    #List of hazard warnings for this region
+    warnings = []
+
     #Constructor takes a name and an id
     def __init__(self, name, id):
         self.name = name
         self.id = id
 
 ##make getters and setters for all attributes
+def get_warnings(self):
+    return self.warnings
 
 ## Make a toString method
+"""
+Description:
+String function returns a string.
+"""
+def __str__(self):
+
+    hazard_warings = get_warnings
+    if hazard_warings.length() > 0:
+        tmp = ""
+        tmp += "\n"
+        tmp += "Warnings for region" + self.get_name + "\n"
+        tmp += "{"
+        for item in self.get_warnings():
+            tmp += str(item)+" "
+        tmp += "}" + "\n"
+        
+
+        return tmp
