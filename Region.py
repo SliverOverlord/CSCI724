@@ -12,7 +12,7 @@ import random
 
 class Region:
     #string: (each region will have a name)
-    name = ""
+    name = "*"
     #int ID: (each region will have an id)
     id = -1
 
@@ -27,6 +27,7 @@ class Region:
     y_value = -1
 
     #string wind_direction;(N,E,W,S)
+    wind_direction = "*"
     #double Temp; (the temperature)
     temp = -1
 
@@ -53,6 +54,12 @@ class Region:
 ##make getters and setters for all attributes
 def get_warnings(self):
     return self.warnings
+
+def set_elevation(self,new_elevation):
+    self.elevation = new_elevation
+
+def get_elevatio(self):
+    return self.elevation
 
 ## Make a toString method
 """
