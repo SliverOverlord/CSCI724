@@ -24,6 +24,9 @@ def select_image():
 main_window = Tk()
 main_window.title("Fire and Weather Hazard Detection and Warning System")
 
+#window background color
+main_window.configure(bg="light steel blue")
+
 #set main_windos size
 main_window.geometry("1000x1000+30+30")
 
@@ -31,7 +34,7 @@ main_window.geometry("1000x1000+30+30")
 top_frame = Frame(main_window)
 top_frame.pack(side = TOP)
 
-heading = Label(main_window, text = "Fire and Weather Hazard Detection and Warning System", fg = "blue")
+heading = Label(main_window, text = "Fire and Weather Hazard Detection and Warning System", fg = "black", bg = "lime green")
 heading.pack()
 
 # Map frame

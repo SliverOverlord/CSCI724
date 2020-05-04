@@ -58,6 +58,19 @@ class Region:
         self.id = id
 
 ##make getters and setters for all attributes
+
+def get_name(self, new_name):
+    return self.name
+
+def set_name(self):
+    self.name = new_name
+
+def get_id(self, new_id):
+    return self.id
+
+def set_id(self):
+    self.id = new_id
+
 def get_warnings(self):
     return self.warnings
 
