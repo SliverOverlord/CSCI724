@@ -1,4 +1,4 @@
-"""
+ """
 Author: Joshua DeNio
 Date: 04/01/2020
 
@@ -20,6 +20,12 @@ class Region:
     adjoining_regions = []
     #int elevation: (in meters)
     elevation = -1
+
+    # Road
+    road = false
+
+    # River
+    river = false
 
     # int x_value;
     x_value = -1
