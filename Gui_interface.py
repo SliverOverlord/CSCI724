@@ -6,8 +6,9 @@ from tkinter import *
 def load_map():
     print("map loaded")
 
-def save_map();
+def save_map():
     #saves a map
+    print("save map")
 
 
 
