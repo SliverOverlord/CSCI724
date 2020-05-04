@@ -38,8 +38,14 @@ heading = Label(main_window, text = "Fire and Weather Hazard Detection and Warni
 heading.pack()
 
 # Map frame
-map_frame = Frame(main_window)
+map_frame = Frame(main_window,width=700,height=700)
+#map_frame.grid_propagate(0)
 map_frame.pack(side = LEFT)
+
+main_window.update()
+
+#Map size
+#map_frame.config(width=400,height=400)
 
 n = Label(map_frame, text = "N", fg = "silver")
 n.pack(side = TOP)
