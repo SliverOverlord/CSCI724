@@ -9,8 +9,9 @@ def load_map():
 def save_map():
     #saves a map
     print("save map")
-
-
+    
+def select_image():
+    print ("select_image")
 
 # End of function declairations -----------
 
